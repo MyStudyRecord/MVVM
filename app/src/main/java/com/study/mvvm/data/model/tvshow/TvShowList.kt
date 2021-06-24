@@ -1,4 +1,6 @@
-package com.study.mvvm.data
+package com.study.mvvm.data.model.tvshow
+
+import com.study.mvvm.data.model.tvshow.TvShow
 
 data class TvShowList(
     val page: Int,

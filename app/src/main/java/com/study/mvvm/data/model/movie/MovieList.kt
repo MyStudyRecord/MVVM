@@ -1,6 +1,6 @@
-package com.study.mvvm.data
+package com.study.mvvm.data.model.movie
 
-import com.study.mvvm.data.Movie
+import com.study.mvvm.data.model.movie.Movie
 
 data class MovieList(
     val page: Int,
