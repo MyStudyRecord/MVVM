@@ -34,7 +34,7 @@ class ArtistRepositoryImpl(
 
     //API호출해서 값 가져오기
     suspend fun getArtistsFromAPI(): List<Artist> {
-        lateinit var movieList: List<Artist>
+        lateinit var artistList: List<Artist>
         try {
             //요청
             val response = artistRemoteDatasource.getArtists()
@@ -43,13 +43,13 @@ class ArtistRepositoryImpl(
             val body = response.body()
 
             if (body != null) {
-                movieList = body.artists
+                artistList = body.artists
             }
 
         } catch (exception: Exception) {
             Log.d("MyTag", exception.message.toString())
         }
-        return movieList
+        return artistList
     }
 
     //DB저장된 값 가져오기
